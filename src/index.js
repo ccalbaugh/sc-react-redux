@@ -7,7 +7,7 @@ import { Provider } from 'react-redux';
 import configureStore from './stores/configureStore.js';
 import * as actions from './actions';
 import App from './components/App';
-import Callbak from './components/Callback';
+import Callback from './components/Callback';
 import Stream from './components/Stream';
 import { CLIENT_ID, REDIRECT_URI } from './constants/auth.js';
 
