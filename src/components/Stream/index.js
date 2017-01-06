@@ -6,17 +6,18 @@ import Stream from './presenter.js';
 
 function mapStateToProps(state) {
 	const { user } = state.auth;
-	const tracks = state.track;
+	const { tracks, activeTrack } = state.track;
 	return {
 		user,
-		tracks
+		tracks,
+		activeTrack
 	}
 }
 
 function mapDispatchToProps(dispatch) {
 	return {
 		onAuth: bindActionCreators(actions.auth, dispatch),
-		onPlay: bindActionCreators(actions.playTracks, dispatch);
+		onPlay: bindActionCreators(actions.playTracks, dispatch)
 	};
 }
 
