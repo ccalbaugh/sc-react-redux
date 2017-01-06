@@ -15,7 +15,8 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
 	return {
-		onAuth: bindActionCreators(actions.auth, dispatch)
+		onAuth: bindActionCreators(actions.auth, dispatch),
+		onPlay: bindActionCreators(actions.playTracks, dispatch);
 	};
 }
 

@@ -6,3 +6,10 @@ export function setTracks(tracks) {
 		tracks
 	};
 };
+
+export function playTracks(tracks) {
+	return {
+		type: actionTypes.TRACK_PLAY,
+		track
+	};
+}
